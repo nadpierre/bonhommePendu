@@ -1,0 +1,116 @@
+/*
+Projet bonus : Jeu du bonhomme pendu (feuille de style)
+Fait par: Nadine Pierre
+Date de remise: 05/11/2018
+*/
+
+
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Permanent+Marker|Sriracha');
+
+body{
+	font-family: 'Permanent Marker', cursive;
+	background-image: linear-gradient(to bottom right, #b7e1bb, white);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	color: #0b2128;
+}
+
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 6em;
+	letter-spacing: 7px;
+	color: white;
+	text-shadow: 5px 5px #11323b;
+}
+
+h2{
+	font-size: 4em;
+}
+
+
+#jeu{
+	display: flex;
+	justify-content: space-around;
+}
+
+#btnNvellePartie{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2.5em;
+}
+
+
+#btnNvellePartie{
+	font-size: 1.75em;
+	padding: 15px;
+	font-size: 2.25em;
+}
+
+#grille_lettres{
+	display: grid;
+	grid-template-columns: 85px 85px 85px 85px;
+	grid-template-rows: 85px 85px 85px 85px 85px 85px 85px;
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+}
+
+.btnLettre{
+	font-family: 'Coming Soon', cursive;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.btnLettre, #btnNvellePartie{
+	background-color: #0b2128;
+	color: white;
+	border: 3px solid white;
+}
+
+.btnLettre:hover:enabled, #btnNvellePartie:hover{
+	background-color: #2F8B4B;
+}
+
+.btnVide{
+	visibility: hidden;
+}
+
+img{
+	border: 5px solid #0b2128;
+}
+
+#mot_mystere{
+	margin-top: 50px;
+}
+
+#mot_mystere{
+	display: grid;
+	grid-template-columns: 5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-column-gap: 10px;
+}
+
+.btnMot{
+	padding: 10px 20px 0px 20px;
+	background-color: transparent;
+	border: none;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: 'Coming Soon', cursive;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.ligneMot{
+	border-bottom: 3px solid #11323b;
+	margin-top: -25px;
+	visibility: hidden;
+}
+
+#actions{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#message{
+	font-size: 5.75em;
+}

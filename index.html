@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!--
+Projet bonus : Jeu du bonhomme pendu (page principale)
+Fait par: Nadine Pierre
+Date de remise: 05/11/2018
+-->
+
+<html lang="fr">
+
+	<head>
+		<title>Jeu du Pendu</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body onload="jouer()">
+		<div id="page_entiere">
+			
+			<h1>Jeu du bonhomme pendu</h1>
+			
+			<div id="actions">
+				<input id="btnNvellePartie" type="button" value="Nouvelle Partie" onClick="window.location.reload()">
+			</div>
+			
+			<h2>Choisissez une lettre : </h2>
+			
+			<div id="jeu">
+				<!-- Lettres de l'alphabet -->
+				<div id="grille_lettres">
+				
+					<input class="btnLettre" type="button" value="A">
+					<input class="btnLettre" type="button" value="B">
+					<input class="btnLettre" type="button" value="C">
+					<input class="btnLettre" type="button" value="D">
+				
+					<input class="btnLettre" type="button" value="E">
+					<input class="btnLettre" type="button" value="F">
+					<input class="btnLettre" type="button" value="G">
+					<input class="btnLettre" type="button" value="H">
+				
+					<input class="btnLettre" type="button" value="I">
+					<input class="btnLettre" type="button" value="J">
+					<input class="btnLettre" type="button" value="K">
+					<input class="btnLettre" type="button" value="L">
+				
+					<input class="btnLettre" type="button" value="M">
+					<input class="btnLettre" type="button" value="N">
+					<input class="btnLettre" type="button" value="O">
+					<input class="btnLettre" type="button" value="P">
+				
+					<input class="btnLettre" type="button" value="Q">
+					<input class="btnLettre" type="button" value="R">
+					<input class="btnLettre" type="button" value="S">
+					<input class="btnLettre" type="button" value="T">
+				
+					<input class="btnLettre" type="button" value="U">
+					<input class="btnLettre" type="button" value="V">
+					<input class="btnLettre" type="button" value="W">
+					<input class="btnLettre" type="button" value="X">
+				
+					<input class="btnLettre" type="button" value="Y">
+					<input class="btnLettre" type="button" value="Z">
+					<input class="btnLettre btnVide" type="button" value="">
+					<input class="btnLettre btnVide" type="button" value="">
+				
+				</div>
+			
+			
+				<div id="photos">
+					<img id="imagePendu" src="images/pendu_0.jpg" width="375"><!-- Image dynamique -->
+				</div>
+			
+			</div>
+			
+			<div id="mot_mystere">
+				<p id="message"></p><!-- Message dynamique -->
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<input class="btnMot" type="button">
+				<span></span>
+				<!-- Lignes pour mettre en dessous du mot mystère -->
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				<p class="ligneMot"></p>
+				
+			</div>
+			
+		</div>
+	</body>
+
+
+</html>
